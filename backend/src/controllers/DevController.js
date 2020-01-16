@@ -69,6 +69,7 @@ module.exports = {
                 blog,
                 techs: techsArray,
                 location,
+                _v: dev.__v + 1,
             });   
             
             dev = await Dev.findOne({ github_username }) // dev Updated
