@@ -31,9 +31,10 @@ app.use(routes);
 //     return response.json({message:"Hello Javascript!!!"});
 // });
 
-app.post('/', (request, response) => {
-    console.log(request.body);
-    return response.json({message:"Hello Javascript!!!"});
+
+app.get('/', (request, response) => {
+    //console.log(request.body);
+    return response.json({message:"Hello Omnistack!"});
 });
 
 app.listen(3333);
