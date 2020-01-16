@@ -17,7 +17,7 @@ app.use(express.json());
 //Coleta as rotas
 app.use(routes);
 
-// Métodos: GETE, POST, PUT, DELETE
+// Métodos: GET, POST, PUT, DELETE
 
 // Tipos de parâmetros:
 // Query Params: req.query (Filtros, ordenação, paginação)
