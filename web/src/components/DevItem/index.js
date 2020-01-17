@@ -12,7 +12,7 @@ function DevItem ({ dev }) {
             </div>
             </header>
             <p>{dev.bio}</p>
-            <a href={"https://github.com/" + dev.github_username}>Acessar perfil</a>
+            <a target="_blank" href={"https://github.com/" + dev.github_username}>Acessar perfil</a>
         </li>
     )
 }
