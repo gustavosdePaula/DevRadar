@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require("./routes")
 
 const app = express();
@@ -11,6 +12,8 @@ mongoose.connect("mongodb+srv://omnistack:GSPomnistack@clusteromnistack-yniec.mo
     }
 )
 
+// Permite acesso externo
+app.use(cors());
 // Configura Express para entender JSON
 app.use(express.json());
 
@@ -32,9 +35,9 @@ app.use(routes);
 // });
 
 
-app.get('/', (request, response) => {
-    //console.log(request.body);
-    return response.json({message:"Hello Omnistack!"});
-});
+// app.get('/', (request, response) => {
+//     //console.log(request.body);
+//     return response.json({message:"Hello Omnistack!"});
+//});
 
 app.listen(3333);
