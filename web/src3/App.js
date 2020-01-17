@@ -13,7 +13,7 @@ import api from './services/api'
 
 // import Header from './Header'
 
-import './Global.css';
+import './global.css';
 import './App.css';
 import './Sidebar.css';
 import './Main.css';

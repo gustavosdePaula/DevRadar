@@ -9,8 +9,7 @@ main ul {
     list-style: none;
 }
 
-
-@media (max-width: 650px){
+@media (max-width: 650px) {
     main ul {
         grid-template-columns: 1fr;
     }
